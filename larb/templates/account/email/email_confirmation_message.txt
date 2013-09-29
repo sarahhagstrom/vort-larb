@@ -1,0 +1,4 @@
+{% load account %}{% user_display user as user_display %}{% load i18n %}{% autoescape off %}{% blocktrans with current_site.name as site_name %}Hi {{ user_display }} and welcome to {{ site_name }}.
+
+To activate your account, go here: {{ activate_url }}
+{% endblocktrans %}{% endautoescape %}

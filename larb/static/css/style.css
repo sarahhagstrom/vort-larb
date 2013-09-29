@@ -1,0 +1,112 @@
+body {
+    background-color: gainsboro;
+}
+a {
+    text-decoration: none;
+}
+input[type='password'],
+input[type='text'],
+input[type='email'] {
+    width: 86%;
+    border-radius:4px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 2px 4px;
+    margin: 6px;
+}
+.logged-in {
+    background: gainsboro url("/static/img/CCTVMobile.jpg") no-repeat center 80px;
+}
+.logged-out {
+    background: gainsboro url("/static/img/WhatAreYouLookingAt.jpg") no-repeat center 30px;
+    background-size: 90%;
+}
+.login_body {
+    background: url('/static/img/WhatAreYouLookingAt2.png') no-repeat center top;
+    background-size: 100%;
+    color: #4d4d4d;
+    font-family: 'Arial',serif;
+    font-size:  14px;
+}
+.fb {
+    background: url('/static/img/fb_200.png') no-repeat center top;
+    box-shadow: 2px 2px 8px rgba(0,0,0,.7);
+    border-radius: 5px;
+    width: 198px;
+    height: 37px;
+    margin: 80px auto;
+    overflow: hidden;
+}
+.inset {
+    width: 200px;
+    padding: 30px;
+    background: rgba(255,255,255,.65);
+    box-shadow: 2px 2px 8px rgba(0,0,0,.7);
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    text-align: center;
+}
+.inset .header {
+    margin-bottom: 10px;
+}
+.remember-forgot-section {
+    width: 94%;
+    text-align: left;
+    margin: 8px auto;
+    font-size: 10px;
+}
+.forgot {
+    float: right;
+    margin-top: 2px;
+}
+.footnote {
+    position: relative;
+    top: 14px;
+    margin-top: 6px;
+    font-size: 10px;
+}
+.banner-img-logged-out,
+.banner-img {
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:50px;
+}
+.pull-right {
+    float:right;
+}
+.btn {
+    color: #fff;
+    font-size: 13px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    background-color: rgb(102, 140, 94);
+    background-image: -moz-linear-gradient(top, rgb(158, 194, 142), rgb(104, 143, 96));
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#9ec28e),to(#688f60));
+    background-image: -webkit-linear-gradient(top, #9ec28e, #688f60);
+    background-image: -o-linear-gradient(top, #9ec28e, #688f60);
+    background-image: linear-gradient(to bottom, #9ec28e, #688f60);
+    background-repeat: repeat-x;
+    border-color: #5f8657;
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    border-width: 2px;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 3px 18px 5px 18px;
+}
+
+.btn:hover,
+.btn.active {
+    box-shadow: 1px 1px 9px rgba(0,0,0,.7);
+}
+
+ul.errorlist {
+    margin: 0;
+    padding: 0;
+}
+ul.errorlist li {
+    display: inline;
+    color: red;
+    font-size: 12px;
+}
