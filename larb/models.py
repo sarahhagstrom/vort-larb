@@ -34,10 +34,9 @@ class UserProfile(models.Model):
         If the user is logged in and has verified hisser email address, return True,
         otherwise return False
         """
-        if self.user.is_authenticated:
-            result = EmailAddress.objects.filter(email=self.user.email)
-            if len(result):
-                return result[0].verified
+        result = EmailAddress.objects.filter(email=self.user.email)
+        if len(result):
+            return result[0].verified
         return False
 
 
